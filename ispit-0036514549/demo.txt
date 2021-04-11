@@ -1,0 +1,7 @@
+# komentar
+SIZE dim=300,200 background:rgb=255,255,255
+
+#komentar
+LINE start=10,10 end=290,10 stroke:rgb=255,0,0
+OVAL center=70,100 rx=50 ry=30 stroke:rgb=255,0,0 fill:rgb=0,255,255
+OVAL rx=50 fill:rgb=0,0,128 center=230,100 ry=30 stroke:rgb=255,0,255

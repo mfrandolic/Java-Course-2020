@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<style>
+			body {background-color: #{$= "background" "FFFFFF" @tparamGet $};}
+		</style>
+	</head>
+<body>
+ 	<h3>Links to scripts:</h3>
+ 	<ul>
+ 		<li><a href="/scripts/osnovni.smscr">osnovni.smscr</a></li>
+ 		<li><a href="/scripts/brojPoziva.smscr">brojPoziva.smscr</a></li>
+ 		<li><a href="/scripts/fibonaccih.smscr">fibonaccih.smscr</a></li>
+ 	</ul>
+ 	
+ 	<h3>Links to workers:</h3>
+ 	<ul>
+ 		<li><a href="/hello">HelloWorker</a></li>
+ 		<li><a href="/cw">CircleWorker</a></li>
+ 	</ul>
+ 	
+ 	<h3>Calculate sum:</h3>
+ 	<form action="/calc" method="GET">
+ 		<label>a = <input type="number" name="a"></label><br><br>
+ 		<label>b = <input type="number" name="b"></label><br><br>
+ 		<input type="submit" value="Submit">
+	</form>
+	
+ 	<h3>Set background color:</h3>
+ 	<form action="/setbgcolor" method="GET">
+ 		<select name="bgcolor">
+ 			<option value="FF0000">Red</option>
+ 			<option value="00FF00">Green</option>
+ 			<option value="0000FF">Blue</option>
+ 			<option value="FFFFFF">White</option>
+ 			<option value="FFA500">Orange</option>
+ 		</select>
+ 		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
